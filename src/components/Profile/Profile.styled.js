@@ -59,11 +59,11 @@ export const Stats = styled.ul`
   align-items: center;
 
   width: 280px;
-  background-color: ${props => props.theme.colors.lightGrey};
+  background-color: ${props => props.theme.colors.lightGrayTransparency};
 
   border-bottom-left-radius: ${props => props.theme.spacing(1)};
   border-bottom-right-radius: ${props => props.theme.spacing(1)};
-  border-top: 1px solid ${props => props.theme.colors.darkGrey};
+  border-top: 1px solid ${props => props.theme.colors.darckGrayTransparency};
 `;
 
 export const Item = styled.li`
@@ -74,7 +74,7 @@ export const Item = styled.li`
 
   width: 33%;
   padding: ${props => props.theme.spacing(4, 2)};
-  border-right: 1px solid ${props => props.theme.colors.darkGrey};
+  border-right: 1px solid ${props => props.theme.colors.darckGrayTransparency};
   :last-child {
     border-right: none;
   }
