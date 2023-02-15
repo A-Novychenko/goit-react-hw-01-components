@@ -73,7 +73,7 @@ export const Item = styled.li`
   align-items: center;
 
   width: 33%;
-  padding: 20px 8px;
+  padding: 16px 8px;
   border-right: 1px solid #7c7c7c;
   :last-child {
     border-right: none;
@@ -83,4 +83,8 @@ export const Item = styled.li`
 export const Label = styled.span`
   margin-bottom: 8px;
   color: #7c7c7c;
+`;
+
+export const Value = styled.span`
+  font-weight: 700;
 `;

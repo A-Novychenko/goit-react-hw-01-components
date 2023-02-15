@@ -8,6 +8,7 @@ import {
   Stats,
   Item,
   Label,
+  Value,
 } from './Profile.styled';
 
 export const Profile = ({
@@ -28,15 +29,21 @@ export const Profile = ({
     <Stats className="stats">
       <Item>
         <Label className="label">Followers</Label>
-        <span className="quantity">{followers}</span>
+        <Value className="quantity">
+          {new Intl.NumberFormat('en-US').format(followers)}
+        </Value>
       </Item>
       <Item>
         <Label className="label">Views</Label>
-        <span className="quantity">{views}</span>
+        <Value className="quantity">
+          {new Intl.NumberFormat('en-US').format(views)}
+        </Value>
       </Item>
       <Item>
         <Label className="label">Likes</Label>
-        <span className="quantity">{likes}</span>
+        <Value className="quantity">
+          {new Intl.NumberFormat('en-US').format(likes)}
+        </Value>
       </Item>
     </Stats>
   </ProfileCard>
