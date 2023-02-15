@@ -15,9 +15,52 @@ code {
     monospace;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-/* .test {
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--dark-text-color);
+} */
+
+.list {
+  list-style: none;
+}
+
+
+.test {
   display: flex;
   justify-content: center;
   align-items: center;
-} */
+  flex-direction: column;
+
+  text-align: center;
+
+  width: 200px;
+  border-radius: 50%;
+
+}
