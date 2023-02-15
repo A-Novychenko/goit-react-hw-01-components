@@ -65,4 +65,5 @@ export const TableCell = styled.td`
 
   font-weight: 400;
   text-transform: capitalize;
+  text-align: center;
 `;
