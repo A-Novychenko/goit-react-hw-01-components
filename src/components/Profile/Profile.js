@@ -10,6 +10,7 @@ import {
   Label,
   Value,
 } from './Profile.styled';
+import { formatNumber } from 'utils';
 
 export const Profile = ({
   username,
@@ -26,24 +27,19 @@ export const Profile = ({
       <Text>{location}</Text>
     </Description>
 
-    <Stats className="stats">
+    <Stats>
       <Item>
-        <Label className="label">Followers</Label>
-        <Value className="quantity">
-          {new Intl.NumberFormat('en-US').format(followers)}
-        </Value>
+        <Label>Followers</Label>
+        {/* <Value>{new Intl.NumberFormat('en-US').format(followers)}</Value> */}
+        <Value>{formatNumber(followers)}</Value>
       </Item>
       <Item>
-        <Label className="label">Views</Label>
-        <Value className="quantity">
-          {new Intl.NumberFormat('en-US').format(views)}
-        </Value>
+        <Label>Views</Label>
+        <Value>{formatNumber(views)}</Value>
       </Item>
       <Item>
-        <Label className="label">Likes</Label>
-        <Value className="quantity">
-          {new Intl.NumberFormat('en-US').format(likes)}
-        </Value>
+        <Label>Likes</Label>
+        <Value>{formatNumber(likes)}</Value>
       </Item>
     </Stats>
   </ProfileCard>
