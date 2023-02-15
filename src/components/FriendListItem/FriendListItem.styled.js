@@ -11,9 +11,7 @@ export const FriendListCard = styled.li`
 
   border-radius: ${props => props.theme.spacing(1)};
   background-color: ${props => props.theme.colors.white};
-    box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: ${props => props.theme.boxShadow};
 
   width: 280px;
   }

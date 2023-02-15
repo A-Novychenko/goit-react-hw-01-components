@@ -13,9 +13,7 @@ export const ProfileCard = styled.div`
   background-color: ${props => props.theme.colors.white};
   border-radius: ${props => props.theme.spacing(1)};
   border: 1px solid ${props => props.theme.colors.darkGrey};
-  box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
+  box-shadow: ${props => props.theme.boxShadow};
   overflow: hidden;
 `;
 

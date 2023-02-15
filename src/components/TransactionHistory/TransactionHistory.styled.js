@@ -12,11 +12,9 @@ export const Table = styled.table`
   margin-bottom: ${props => props.theme.spacing(10)};
 
   border-radius: ${props => props.theme.spacing(1)};
-  border: 1px solid rgb(124, 124, 124);
+  border: 1px solid ${props => props.theme.colors.darkGrey};
   background-color: ${props => props.theme.colors.white};
-    box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
+    box-shadow: ${props => props.theme.boxShadow};
   overflow: hidden;
   width: 768px;
   font-family: Roboto, sans-serif;
@@ -25,7 +23,7 @@ export const Table = styled.table`
 `;
 
 export const TableHead = styled.thead`
-  background-color: #31b7f5;
+  background-color: ${props => props.theme.colors.lightBlue};
   width: 100%;
 
   text-transform: uppercase;

@@ -6,6 +6,7 @@ export const theme = Object.freeze({
     lightGrayTransparency: 'rgba(221, 221, 221, 0.8)',
     darckGrayTransparency: 'rgba(124, 124, 124, 0.3)',
     black: '##000000',
+    lightBlue: '#31b7f5',
   },
   spacing: (...values) => {
     let value = '';
@@ -14,4 +15,8 @@ export const theme = Object.freeze({
     }
     return value;
   },
+
+  boxShadow: `0px 0px 22px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);`,
 });
