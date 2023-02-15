@@ -1,11 +1,13 @@
 import { Profile } from 'components/Profile/Profile';
+import { Statistics } from 'components/Statistics/Statistics';
 import user from '../../user.json';
-import { Container, Section } from './App.styled';
+import data from '../../data.json';
+import { Container, SectionWrapper } from './App.styled';
 
 export const App = () => {
   return (
     <Container>
-      <Section>
+      <SectionWrapper>
         <Profile
           username={user.username}
           tag={user.tag}
@@ -13,7 +15,11 @@ export const App = () => {
           avatar={user.avatar}
           stats={user.stats}
         />
-      </Section>
+      </SectionWrapper>
+      <SectionWrapper>
+        <Statistics title="Upload stats" stats={data} />
+        <Statistics stats={data} />
+      </SectionWrapper>
     </Container>
   );
 };

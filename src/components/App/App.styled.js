@@ -4,7 +4,10 @@ export const Container = styled.div`
   padding-left: ${props => props.theme.spacing(5)};
   padding-right: ${props => props.theme.spacing(5)};
 `;
-export const Section = styled.div`
+export const SectionWrapper = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+
   margin-top: ${props => props.theme.spacing(10)};
   margin-bottom: ${props => props.theme.spacing(10)};
   padding-top: ${props => props.theme.spacing(20)};
