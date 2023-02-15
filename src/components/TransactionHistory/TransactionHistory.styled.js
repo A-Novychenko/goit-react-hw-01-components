@@ -54,7 +54,7 @@ export const TableBody = styled.tbody`
   }
 `;
 
-export const TableCell = styled.th`
+export const TableCell = styled.td`
   padding: ${props => props.theme.spacing(2, 0, 2)};
   width: 100%;
 
