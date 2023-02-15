@@ -10,9 +10,9 @@ export const ProfileCard = styled.div`
   margin-right: auto;
 
   width: 280px;
-  background-color: #ffffff;
-  border-radius: 4px;
-  border: 1px solid #7c7c7c;
+  background-color: ${props => props.theme.colors.white};
+  border-radius: ${props => props.theme.spacing(1)};
+  border: 1px solid ${props => props.theme.colors.darkGrey};
   box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 22px 4px rgba(0, 0, 0, 0.75);
@@ -25,29 +25,29 @@ export const Description = styled.div`
   justify-content: center;
   align-items: center;
 
-  padding: 32px;
+  padding: ${props => props.theme.spacing(8)};
 `;
 
 export const Avatar = styled.img`
-  margin-bottom: 32px;
+  margin-bottom: ${props => props.theme.spacing(8)};
 
   width: 100px;
   border-radius: 50%;
-  border: 1px solid #dddddd;
+  border: 1px solid ${props => props.theme.colors.lightGrey};
 `;
 
 export const Name = styled.p`
-  margin-bottom: 8px;
-  font-size: 20px;
+  margin-bottom: ${props => props.theme.spacing(2)};
+  font-size: ${props => props.theme.spacing(5)};
   font-weight: 500;
 
   color: #000000;
 `;
 
 export const Text = styled.p`
-  margin-bottom: 8px;
-  font-size: 16px;
-  color: #7c7c7c;
+  margin-bottom: ${props => props.theme.spacing(2)};
+  font-size: ${props => props.theme.spacing(4)};
+  color: ${props => props.theme.colors.darkGrey};
   :last-child {
     margin-bottom: 0;
   }
@@ -59,11 +59,11 @@ export const Stats = styled.ul`
   align-items: center;
 
   width: 280px;
-  background-color: #dddddd;
+  background-color: ${props => props.theme.colors.lightGrey};
 
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-top: 1px solid #7c7c7c;
+  border-bottom-left-radius: ${props => props.theme.spacing(1)};
+  border-bottom-right-radius: ${props => props.theme.spacing(1)};
+  border-top: 1px solid ${props => props.theme.colors.darkGrey};
 `;
 
 export const Item = styled.li`
@@ -73,16 +73,16 @@ export const Item = styled.li`
   align-items: center;
 
   width: 33%;
-  padding: 16px 8px;
-  border-right: 1px solid #7c7c7c;
+  padding: ${props => props.theme.spacing(4, 2)};
+  border-right: 1px solid ${props => props.theme.colors.darkGrey};
   :last-child {
     border-right: none;
   }
 `;
 
 export const Label = styled.span`
-  margin-bottom: 8px;
-  color: #7c7c7c;
+  margin-bottom: ${props => props.theme.spacing(2)};
+  color: ${props => props.theme.colors.darkGrey};
 `;
 
 export const Value = styled.span`

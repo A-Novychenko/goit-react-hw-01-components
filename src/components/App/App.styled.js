@@ -1,31 +1,14 @@
 import styled from '@emotion/styled';
 
 export const Container = styled.div`
-  padding-left: 20px;
-  padding-right: 20px;
-
-  @media screen and (min-width: 320px) {
-    width: 320px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
+  padding-left: ${props => props.theme.spacing(5)};
+  padding-right: ${props => props.theme.spacing(5)};
 `;
 export const Section = styled.div`
-  margin-top: 40px;
-  margin-bottom: 40px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: #dddddd;
-  
+  margin-top: ${props => props.theme.spacing(10)};
+  margin-bottom: ${props => props.theme.spacing(10)};
+  padding-top: ${props => props.theme.spacing(20)};
+  padding-bottom: ${props => props.theme.spacing(20)};
+  background-color: ${props => props.theme.colors.lightGrey};
   }
 `;
