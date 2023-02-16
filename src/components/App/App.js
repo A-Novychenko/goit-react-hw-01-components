@@ -7,10 +7,13 @@ import data from '../../data/data.json';
 import friends from '../../data/friends.json';
 import transactions from '../../data/transactions.json';
 import { Container, SectionWrapper } from './App.styled';
+import { Global } from '@emotion/react';
+import { globalStyles } from '../../constants';
 
 export const App = () => {
   return (
     <Container>
+      <Global styles={globalStyles} />
       <SectionWrapper>
         <Profile
           username={user.username}

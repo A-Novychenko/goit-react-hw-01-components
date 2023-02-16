@@ -1,6 +1,6 @@
-@import 'normalize.css/normalize.css';
-/* bring in normalize.css styles */
+import 'modern-normalize';
 
+export const globalStyles = `
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -40,13 +40,7 @@ img {
   height: auto;
 }
 
-/* body {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  color: var(--dark-text-color);
-} */
-
 .list {
   list-style: none;
 }
+`;
